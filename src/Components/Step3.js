@@ -3,13 +3,16 @@ import React, { Component } from 'react';
 import {
     Grid,
     TextField,
-    Typography
+    Typography,
+    Button
 } from '@material-ui/core'
 
 class Step3 extends Component {
-    state = [
+    state = {}
 
-    ]
+    handleNext = () => {
+
+    }
 
     render(){
         return(
@@ -29,6 +32,7 @@ class Step3 extends Component {
                         variant="outlined"
                         label="Ethnicity"
                         />
+                    <Button onClick={this.handleNext}>Next</Button>
                 </Grid>
             </Grid>
         )

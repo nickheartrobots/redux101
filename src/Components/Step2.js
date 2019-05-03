@@ -3,11 +3,16 @@ import React, { Component } from 'react';
 import {
     Grid,
     TextField,
-    Typography
+    Typography,
+    Button
 } from '@material-ui/core'
 
 class Step2 extends Component {
     state = {}
+
+    handleNext = () => {
+
+    }
 
     render(){
         return(
@@ -34,7 +39,8 @@ class Step2 extends Component {
                     <TextField
                         variant="outlined"
                         label="Zip"
-                        />  
+                        />          
+                    <Button onClick={this.handleNext}>Next</Button>
                 </Grid>
             </Grid>
         )
